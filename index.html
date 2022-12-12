@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEONS MAZE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div id="fondo">
+        <h1 id="title">NEONS MAZE</h1>
+        <button id="start-btn">Start Game</button>
+    </div>
+
+    <div id="instructions" class="hidden">
+        <p id="stop">Press ALT to STOP the Game</p>
+        <p id="return">Press X to RETURN the Game</p>
+    </div>
+
+    <div id="game-over-screen">
+        <button id="again-btn" class="hidden">TRY AGAIN!</button>
+    </div> 
+    <canvas id="canvas" width="1800" height="960"></canvas>
+    
+    <script src="background.js"></script>
+    <script src="obstacles.js"></script>
+    <script src="player.js"></script>
+    <script src="constants.js"></script>
+    <script src="game.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>

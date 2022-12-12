@@ -1,0 +1,11 @@
+
+1) Por qué si quiero saltar con escape se me acelera la velocidad???
+2) como meto varios tipos de killobstacles y jumpingobs?? tengo que crear varios js??
+
+3) colisiones no acabo de entender la formula.
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+html, body {
+    font-family: 'Rubik Distressed', cursive;
+
+  }
+
+body h1 {
+    color:rgba(233, 33, 240, 0.959);
+    font-size: 94px;
+    font-weight: 300;
+}
+
+#start-btn {
+    width: 200px;
+    height: 120px;
+    font-size: 40px;
+    font-family: 'Rubik Distressed', cursive;
+    color:rgba(233, 33, 240, 0.959);
+    background: none;
+    border-color: rgba(233, 33, 240, 0.959);
+    border-radius: 10px;
+    border-width: 10px;
+    margin-top: 46px;
+}
+
+#again-btn {
+    font-family: 'Rubik Distressed', cursive;
+    width: 200px;
+    height: 120px;
+    font-size: 40px;
+    color:rgba(233, 33, 240, 0.959);
+    background: none;
+    border-color: rgba(233, 33, 240, 0.959);
+    border-radius: 10px;
+    border-width: 10px;
+    margin-top: 500px;
+    margin-left: 800px;
+}
+
+.hidden{
+    display: none !important;
+}
+
+#fondo {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1800px;
+    height: 960px;
+    background-image: url(/images/Pregame.webp);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: cover;
+}
+
+#canvas {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+#title {
+    margin-top: -383px;
+}
+
+#instructions {
+   color: rgb(5, 1, 7); 
+   font-size: 20px;
+   text-shadow: rgb(255, 255, 255) 2px 1px 10px;
+   text-decoration-line: underline;
+   margin-top: 800px;
+   margin-left: 50px;
+   
+}
