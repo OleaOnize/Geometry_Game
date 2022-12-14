@@ -53,6 +53,32 @@ body h1 {
     background-size: cover;
 }
 
+#Prefondo {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1800px;
+    height: 960px;
+    background-image: url(/images/Fondo_instrucciones.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: cover;
+}
+
+#understood-btn {
+    font-family: 'Rubik Distressed', cursive;
+    width: 300px;
+    height: 120px;
+    font-size: 40px;
+    color:rgba(233, 33, 240, 0.959);
+    border-color: rgba(233, 33, 240, 0.959);
+    border-radius: 10px;
+    border-width: 10px;
+    margin-top: 847px;
+    margin-left: 505px;
+}
+
 #canvas {
     position: absolute;
     top: 0px;

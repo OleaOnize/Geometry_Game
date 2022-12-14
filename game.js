@@ -20,6 +20,8 @@ class Game {
         })
       }
       this.intervalId = setInterval(()=>{
+        console.log(this.obs)
+        this.clear();
         this.draw();
         this.score();
         this.move();
@@ -118,8 +120,12 @@ class Game {
 		this.ctx.fillStyle = "rgb(255, 255, 255)";
 		this.ctx.font = "40px 'Rubik Distressed', cursive";
 		this.ctx.textAlign = "center";
-		this.ctx.fillText(`WIN`, this.canvas.width / 2, this.canvas.height / 2);
+		this.ctx.fillText(`OMG! YOU ARE A F**KING PRO`, this.canvas.width / 2, this.canvas.height / 2);
     instructions.classList.add("hidden");
     }
+
+  clear(){
+    this.obs = this.obs.filter((obstacle) => obstacle.x + obstacle.width > 0);
   }
+}
 

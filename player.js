@@ -58,7 +58,6 @@ class Player {
   }
 
   move() {
-    console.log(this.isNoneGrav);
     if (!this.isSquare){  //NAVE
       this.speed += 0.8;
       this.y += this.speed;
@@ -153,11 +152,15 @@ class Player {
       && this.x  +tresholdCol<= obstacle.x + obstacle.width
       && this.y + this.height >= obstacle.y +tresholdCol
       && this.y - tresholdCol<= obstacle.y + obstacle.height) {
-        if((obstacle.type === "pusher" && this.x + this.width >= obstacle.x + treshold)) {
+        if((obstacle.type === "pusher" && this.x + this.width >= obstacle.x + treshold) && !this.isNoneGrav) {
           this.y -= 1;
         this.isJumping = true;
         this.speed = -40;
-        } else if ((obstacle.type === "jumperNeonBlue" || obstacle.type === "jumper" || obstacle.type ==="jumperNeonViolet" )  && this.prevY + this.height <= obstacle.y +tresholdCol && !this.isNoneGrav) {
+        } else if((obstacle.type === "pusher" && this.x + this.width >= obstacle.x + treshold) && this.isNoneGrav) {
+        this.isJumping = true;
+        this.y += 20;
+        this.speed = +30;
+        }else if ((obstacle.type === "jumperNeonBlue" || obstacle.type === "jumper" || obstacle.type ==="jumperNeonViolet" )  && this.prevY + this.height <= obstacle.y +tresholdCol && !this.isNoneGrav) {
           // hay top collision
           this.speed = 0; //esto es para que no se acelere con la gravedad siempre que estés subido a un obstaculo jumper
           this.maxY = obstacle.y - this.height +tresholdCol;
