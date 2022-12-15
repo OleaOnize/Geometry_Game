@@ -103,6 +103,7 @@ class Game {
     this.player.isDead = false;
     this.player.isNoneGrav = false;
     this.player.isSquare = true;
+    this.player.isJumping = false;
     this.scoreboard = 0;
     this.player = new Player(this.ctx, 400, this.canvas.height -180, 80, 80);
 	}
