@@ -19,6 +19,7 @@ startBtn.addEventListener('click', () => {
 	preSound.pause();
 	startSound.play();
 	startSound.volume = 0.01;
+	game.scoreboard = 0;
 	game.start();
 	gameMusic.play();
 	gameMusic.volume = 0.5;
@@ -41,7 +42,7 @@ understood.addEventListener('click', () =>{
 	backg.classList.remove("hidden");
 	prefondo.classList.add("hidden");
 	preSound.play();
-	preSound.volume = 0.2;
+	preSound.volume = 0.5;
 
 })
 
